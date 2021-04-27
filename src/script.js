@@ -37,9 +37,21 @@ function fight(player1, player2, player1Health, player2Health) {
         if (attacker == player1) {
             player2Health = attackPlayer(player2Health);
             logHealth(player2, player2Health);
-            isDead(player2Health) {
-              //  if             }
-
+            isDead(player2Health) 
+                if (isDead == true) {
+                    logDeath(player1, player2);
+                    break
+                }
+        } else {
+            player1Health = attackPlayer(player1Health);
+            logHealth(player1, player1Health);
+            isDead(player1Health)
+                if (isDead == true) {
+                    logDeath(player2, player1);
+                    break
+                }
         }
     } 
 }
+
+fight('Kenny Crow', 'Noctis', 100, 100)
